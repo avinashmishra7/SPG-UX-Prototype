@@ -1,0 +1,58 @@
+@media screen and (max-width:768px) {
+	.left_main_menu{
+		margin-left: -190px;
+	}
+	.left_main_menu:hover{
+		margin-left: 0px;
+	}
+	
+	.left_main_accord .com_hover .panel-heading .panel-title>a::before {
+		float: right;
+		margin-right: 0px;
+	}
+	
+	.left_main_menu:hover .left_main_accord .com_hover .panel-heading .panel-title>a::before{
+		float: left;
+		margin-right: 12px;
+	}
+	
+	.left_main_accord .panel-heading .panel-title>a[aria-selected=false]:after {
+		display:none;
+	}
+	.left_main_accord .panel-heading .panel-title>a[aria-selected=true]:after {
+		display:none;
+	}
+	.left_main_menu:hover .left_main_accord .panel-heading .panel-title>a[aria-selected=true]:after{
+		display:block;
+	}
+	.left_main_menu:hover .left_main_accord .panel-heading .panel-title>a[aria-selected=false]:after{
+		display:block;
+	}
+	
+	.left_main_accord:hover .com_menu .panel-heading .panel-title>a[aria-selected=false]:after{
+		display:none;
+	}
+	.left_main_accord:hover .com_menu .panel-heading .panel-title>a[aria-selected=true]:after{
+		display:none;
+	}
+	
+	
+	
+	
+	.left_main_accord .panel-default>.panel-heading+.panel-collapse>.panel-body {
+		display:none;
+	}
+	.left_main_menu:hover .left_main_accord .panel-default>.panel-heading+.panel-collapse>.panel-body{
+		display:block;
+	}
+	
+	
+	
+}
+
+
+
+
+	
+
+
