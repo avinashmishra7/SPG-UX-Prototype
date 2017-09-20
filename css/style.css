@@ -336,8 +336,14 @@
     height: 18px;
 }
 
+.left_main_accord .manage .panel-heading:hover .panel-title>a::before {
+    background: url(../images/manage_hover.png);
+    width: 16px;
+    height: 17px;
+}
+
 .left_main_accord .manage .panel-heading .panel-title>a::before {
-	background: url(../images/manage.png);
+    background: url(../images/manage.png);
     width: 16px;
     height: 17px;
 }
@@ -346,10 +352,19 @@
 	background: url(../images/manage_hover.png);
 } */
 
-.left_main_accord .dashboard .panel-heading .panel-title>a::before {
-	background: url(../images/dashboard.png);
+.left_main_accord .dashboard .panel-heading:hover .panel-title>a::before {
+    background: url(../images/dashboard_hover.png);
     width: 18px;
     height: 18px;
+}
+
+.left_main_accord .dashboard .panel-heading .panel-title>a::before {
+    background: url(../images/dashboard.png);
+    width: 18px;
+    height: 18px;
+}
+.left_main_accord .select_active .panel-heading .panel-title>a::before {
+    background: url(../images/dashboard_hover.png);
 }
 
 .left_main_accord .com_hover .panel-heading .panel-title>a::before {
@@ -374,7 +389,38 @@
 }
 .scrollarea.area{
   height: 773px;
-}	
+}
+
+.select_active{
+    color:#4EB4E3;
+    border-left: 3px solid #4EB4E3 !important;
+}
+.non_active{
+    border-left: 3px solid #383e4b !important;
+}
+.non_active:hover{
+    border-left: 3px solid #22262e !important;
+}
+.select_active a{
+    color:#4EB4E3 !important;
+}
+
+.left_main_accord .panel-heading .panel-title>a {
+    width: 100%;
+    position: relative;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-bottom: none;
+    color: #9d9d9d;
+    display: block;
+    padding: 14px 15px 11px 19px;
+    cursor: pointer;
+    font-size: 13px;
+    /*Change on 20 sept*/
+    font-weight: bold;
+}
+
 /*================Left menu css end here================================*/
 .top_images{
 	display:flex;
