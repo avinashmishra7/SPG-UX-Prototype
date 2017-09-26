@@ -2,7 +2,6 @@ var config = {
    entry: './components/router.jsx',
 	
    output: {
-      path:'/',
       filename: 'bundle.js',
    },
 	

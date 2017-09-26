@@ -31,15 +31,15 @@ const LeftMenu = React.createClass({
 						
 						<Panel collapsible header="Dashboard"  defaultExpanded  className={this.state.selectedLeft=="dashboard"?"select_active left_panel IT-Services com_hover dashboard com_menu":"non_active left_panel IT-Services com_hover dashboard com_menu"} onClick={()=>{this.props.leftMenuClick('dashboard')}}></Panel>
 						
-						<Panel  aria-expanded="true" collapsible defaultExpanded header="Products & Services"  className="left_panel IT-Services com_hover top_fst_menu">
+						<Panel  onClick={()=>{this.props.leftMenuClick('allProducts')}} aria-expanded="true" collapsible defaultExpanded header="Products & Services"  className="left_panel IT-Services com_hover top_fst_menu">
 							<ul className="col-xs-12 no-pad left_panel_ul  ">
-								<li className={this.state.selectedLeft=="allProducts"?"select_active col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}  onClick={()=>{this.props.leftMenuClick('allProducts')}}>
+								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('allProducts')}} className={this.state.selectedLeft=="allProducts"?"select_active col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} >
 									<label id="Project_type">All products and services</label>
 								</li>
-								<li className={this.state.selectedLeft=="productUpdates"?"select_active col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}  onClick={()=>{this.props.leftMenuClick('productUpdates')}}>
+								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('productUpdates')}} className={this.state.selectedLeft=="productUpdates"?"select_active col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} >
 									<label  id="Geography">Product updates</label>
 								</li>
-								<li className={this.state.selectedLeft=="trials"?"select_active col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={()=>{this.props.leftMenuClick('trials')}}>
+								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('trials')}} className={this.state.selectedLeft=="trials"?"select_active col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}>
 									<label  id="Geography">Trials</label>
 								</li>
 							</ul>
