@@ -17,7 +17,9 @@ const Header = React.createClass({
 					<header className="">
 						<nav className="module moduleGlobal">
 							<ul className="module moduleGlobalNav">
-								<li className="left_menu"><a className="logo" href="#">Autodesk Account</a></li>
+								<li className="left_menu">
+									<a className="logo" href="#"></a>
+								</li>
 								<li className="user"><span className="devide"></span><span className="avatar"></span></li>
 								<li className="com_icon">
 									<span className="notification"></span>
