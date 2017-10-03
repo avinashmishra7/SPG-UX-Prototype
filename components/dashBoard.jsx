@@ -88,19 +88,19 @@ const DashBoard = React.createClass({
 				
 				<div className="col-xs-12 col-md-9 col-sm-12 col-lg-9 no-pad">
 					<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top btn_grp">
-						<li className="col-xs-4 col-md-4 col-sm-4 col-lg-4 no-pad ">
+						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
 							<div className="revit_update"></div>
 							<div className="button_upper_text">2 new revit updates avilable</div>
 							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_download" value="Download now"/></div>
 							<div className="btn_seperator"></div>
 						</li>
-						<li className="col-xs-4 col-md-4 col-sm-4 col-lg-4 no-pad ">
+						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
 							<div className="auto_cad"></div>
 							<div className="button_upper_text">AutoCAD is expiring on <br/> October 21,2017</div>
 							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_renew" value="RENEW NOW"/></div>
 							<div className="btn_seperator"></div>
 						</li>
-						<li className="col-xs-4 col-md-4 col-sm-4 col-lg-4 no-pad ">
+						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
 							<div className="auto_desk"></div>
 							<div className="button_upper_text">Get to know your Autodesk <br/>Account</div>
 							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_tour" value="TAKE A TOUR"/></div>
