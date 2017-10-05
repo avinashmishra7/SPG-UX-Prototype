@@ -6,6 +6,7 @@ import {Navbar,Carousel,Item,Caption,Popover,Tooltip,OverlayTrigger,Table,Tabs,T
 import ScrollArea  from 'react-scrollbar';
 import { Router, Route, Link, browserHistory, History ,RouterContext} from 'react-router';
 
+import QuickLinks from './quickLinks.jsx';
 
 
 const LeftMenu = React.createClass({
@@ -23,7 +24,6 @@ const LeftMenu = React.createClass({
 		
 	render: function() {
 		
-		console.log("selected left menu..."+this.state.selectedLeft);
 		return (
 			<div className="col-xs-2 col-md-2 col-sm-2 col-lg-2 no-pad left_main_menu">
 				<ScrollArea speed={0.8} className="area leftScroll" contentClassName="content" horizontal={false}>
@@ -97,29 +97,20 @@ const LeftMenu = React.createClass({
 						<Panel header="Send feedback"  defaultExpanded collapsible  className="left_panel IT-Services top_last_menues com_menu"></Panel>
 						<Panel header="Contact us" defaultExpanded collapsible  className="left_panel IT-Services top_last_menues com_menu"></Panel>
 						
-						
-						{/*<Panel header="Privacy statement" defaultExpanded collapsible  className="left_panel IT-Services top_last_menues com_menu"></Panel>
-						<Panel defaultExpanded header="Legal Notices & Trademarks" collapsible className="left_panel IT-Services top_last_menues com_menu"></Panel>
-						
-						
-						 <Panel header="Quicl Link" collapsible defaultExpanded className="left_panel IT-Services com_hover  link_bot" ></Panel> */}
 						<div className="separator"></div>
 						
 					</PanelGroup>
 				
 				
-				<div className="privacy">
-					<div className="">Privacy statement</div>
-					<div className="">Legal Notices & Trademarks</div>
-					<div className="">Report Noncompliance</div>
-					<div className="autodesk">@2017 Autodesk Inc</div>
-					<div className="">All rights reserved</div>
-				</div>
+					<div className="privacy">
+						<div className="">Privacy statement</div>
+						<div className="">Legal Notices & Trademarks</div>
+						<div className="">Report Noncompliance</div>
+						<div className="autodesk">@2017 Autodesk Inc</div>
+						<div className="all_rights">All rights reserved</div>
+					</div>
 				</ScrollArea>
-				
-				<PanelGroup collapsible defaultExpanded  aria-multiselectable="true" className="col-xs-12 no-pad left_main_accord bottom_link">
-					<Panel header="Quick Links" collapsible defaultExpanded className="left_panel IT-Services com_hover  link_bot" ></Panel>
-				</PanelGroup>
+				<QuickLinks selectedRight={this.state.selectedLeft}/>
 					
 				
 			</div>

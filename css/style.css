@@ -229,7 +229,7 @@
     display: block;
     padding: 14px 15px 11px 19px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
     /*Change on 20 sept*/
     font-weight: bold;
 }
@@ -261,7 +261,7 @@
 
 .left_panel_ul li:focus, .left_panel_ul li:hover,.left_panel .panel-heading a:hover {
     text-decoration: none;
-    background: #22262e !important;
+   /*  background: #22262e !important; */
     color:#4EB4E3 !important;
 }
 
@@ -277,7 +277,7 @@
     font-size: 13px;
 }
 .left_panel_ul li:hover {
-    background: #e2f3db;
+  /*   background: #e2f3db; */
 }
 .left_panel_ul li label{
     font-size: 12px;
@@ -398,7 +398,7 @@
 .left_main_accord .panel-heading .panel-title>a:hover {
     text-decoration: none;
     color: #000000;
-    background: #ffffff;
+    /* background: #ffffff; */
 }
 .separator{
     margin: 16px 12px 16px 16px;
@@ -442,7 +442,9 @@
  .scrollarea .scrollbar-container.vertical .scrollbar {
     background: #fff !important;
 }
-
+.all_rights{
+    margin-bottom:20px;
+}
 /*================Left menu css end here================================*/
 .top_images{
     display:flex;
@@ -726,11 +728,12 @@ body{
     position: fixed !important;
     width: 240px;
     bottom: 0px;
+    background:#0A131C !important;
 }
 
-/* .bottom_link{
-    margin-top: 115px;
-} */
+/*  .bottom_link{
+    
+} */ 
 .bottom_link .panel-heading .panel-title>a[aria-selected=false]:after {
     content: "";
     float: left;
@@ -772,6 +775,12 @@ body{
 .autodesk{
     margin-top: 15px;
 }
+.quick_link{
+    background:#0A131C;
+}
+.link_down{
+    margin-bottom:15px;
+}
 /*============Quick Links end here===========*/
 
 .left_main_accord .header_active .panel-title>a[aria-selected=true]{
@@ -796,7 +805,7 @@ z-index: 1020;
     width: 100%;
 }
 .left_main_menu {
-    background: #383e4b none repeat scroll 0 0;
+    background: #222933 none repeat scroll 0 0;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -815,9 +824,11 @@ z-index: 1020;
 }
 
 .scrollarea.area {
-    height: 850vh;
+    height:1300vh;
     position: relative;
 }
 .main_bg {
     margin-left: 240px;
 }
+
+

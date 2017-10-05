@@ -8,6 +8,7 @@ import Trial from './trial.jsx';
 import AllProducts from './allProducts.jsx';
 import ProductUpdates from './productUpdates.jsx';
 import Home from './home.jsx';
+import QuickLinks from './quickLinks.jsx';
 
 
 
