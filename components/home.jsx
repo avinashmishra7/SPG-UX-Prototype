@@ -22,7 +22,6 @@ class Home extends React.Component{
 		console.log('[HOME] is will unmount');
 	}
 	mobileDashboard(){
-		console.log('called me');
 		this.setState({
 			mobileDashboardClick:!this.state.mobileDashboardClick,
 		})
@@ -31,7 +30,7 @@ class Home extends React.Component{
 		console.log('mobileDashboardClick',this.state.mobileDashboardClick);
 		return(
 			<div>
-				<Header mobileDashboard={this.mobileDashboard.bind(this)}/>
+				<Header mobileDashboard={this.mobileDashboard.bind(this)} mobileDashboardClick={this.state.mobileDashboardClick}/>
 					<div className="main_content">
 						<LeftMenu mobileDashboardClick={this.state.mobileDashboardClick} mobileDashboard={this.mobileDashboard.bind(this)} selectedLeft={this.state.selectedLeft} leftMenuClick={(val)=>{this.setState({selectedLeft:val,selectedRight:val,mobileDashboardClick:!this.state.mobileDashboardClick})}}/>	
 						<RightContent  mobileDashboardClick={this.state.mobileDashboardClick} mobileDashboard={this.mobileDashboard.bind(this)} selectedRight={this.state.selectedRight}/>

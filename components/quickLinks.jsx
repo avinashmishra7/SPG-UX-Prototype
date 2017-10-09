@@ -29,13 +29,19 @@ const QuickLinks = React.createClass({
 						{this.props.selectedRight=="dashboard" ?
 						<ul className="col-xs-12 no-pad left_panel_ul  quick_link">
 							<li className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<label id="Project_type">Manage devices1</label>
+								<label id="Project_type">Sherpa link one</label>
 							</li>
+							<li className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<label id="Project_type">Sherpa link two</label>
+							</li>
+							<div className="separator"></div>
 							
 							<li className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 								<label id="Project_type">Manage devices1</label>
 							</li>
-							
+							<li className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<label id="Project_type">Manage devices1</label>
+							</li>
 							<li className="col-xs-12 col-sm-12 col-md-12 col-lg-12 link_down">
 								<label id="Project_type">Manage devices1</label>
 							</li>

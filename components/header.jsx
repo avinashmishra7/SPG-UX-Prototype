@@ -8,7 +8,7 @@ import LeftMenu from './leftMenu.jsx';
 const Header = React.createClass({
 		
 	render: function() {
-		console.log("header...",this.props.selectedLeft);
+		console.log("header come......",this.props.mobileDashboardClick);
 		return (
 			<div className="top_header">
 				<div className="header">
@@ -18,7 +18,7 @@ const Header = React.createClass({
 								<li className="left_menu">
 									<a className="logo1" href="#"></a>
 									<a className="logo2" href="#"></a>
-									<a className="mobile_view" href="#" onClick={this.props.mobileDashboard}></a>
+									<a className={this.props.mobileDashboardClick?"mobile_close":"mobile_view"} href="#" onClick={this.props.mobileDashboard}></a>
 									<a className="mobile_logo" href="#"></a>
 								</li>
 								<li className="user"><span className="devide"></span><span className="avatar"></span></li>
@@ -31,7 +31,6 @@ const Header = React.createClass({
 					</header>
 				</div>
 			</div>
-		
 		)
 	}
 });

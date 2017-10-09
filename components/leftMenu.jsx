@@ -82,12 +82,14 @@ const LeftMenu = React.createClass({
 								<li  className={this.state.selectedLeft=="subscriptions"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('subscriptions')}} >
 									<label id="Project_type">Subscriptions</label>
 								</li>
-								<li  className={this.state.selectedLeft=="upcoming_payments"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('upcoming_payments')}} >
+								
+								<li  className={this.state.selectedLeft=="upcoming_payments"?"sub_pad active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"sub_pad non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('upcoming_payments')}} >
 									<label  id="Geography">Upcoming Payments</label>
 								</li>
-								<li  className={this.state.selectedLeft=="order_history"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('order_history')}} >
+								<li  className={this.state.selectedLeft=="order_history"?"sub_pad active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":" sub_pad non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('order_history')}} >
 									<label  id="Geography">Order history</label>
 								</li>
+								
 								<li  className={this.state.selectedLeft=="contracts"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('contracts')}} >
 									<label  id="Geography">Contracts</label>
 								</li>

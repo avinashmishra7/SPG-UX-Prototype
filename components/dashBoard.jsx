@@ -23,10 +23,10 @@ const DashBoard = React.createClass({
 		const {expandedSector} = this.state
 		
 		return (
-		<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12">
+		<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 fix_width">
 		
 			<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad main_content1">
-			 <div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
+				<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
 					<h4 className="top_wish">Good afternoon, Jane</h4>
 				</div>
 				<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad features ul_mobile_view">
@@ -67,7 +67,7 @@ const DashBoard = React.createClass({
 			
 			<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad main_content1">
 				<div className="col-xs-12 col-md-9 col-sm-12 col-lg-9 no-pad">
-					<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top btn_grp">
+					<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top btn_grp desktop_view">
 						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
 							<div className="revit_update"></div>
 							<div className="button_upper_text">2 new revit updates avilable</div>
@@ -77,15 +77,57 @@ const DashBoard = React.createClass({
 						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
 							<div className="auto_cad"></div>
 							<div className="button_upper_text">AutoCAD is expiring on <br/> October 21,2017</div>
-							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_renew" value="RENEW NOW"/></div>
+							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_renew" value="Renew now"/></div>
 							<div className="btn_seperator"></div>
 						</li>
 						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
 							<div className="auto_desk"></div>
 							<div className="button_upper_text">Get to know your Autodesk <br/>Account</div>
-							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_tour" value="TAKE A TOUR"/></div>
+							<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_tour" value="Take a tour"/></div>
 						</li>
 					</ul>
+					
+					{/*Carousel start here*/}
+					<Carousel className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top slider">
+					
+						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top">
+							<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad ">
+								<div className="revit_update"></div>
+								<div className="button_upper_text">2 new revit updates avilable</div>
+								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_download" value="Download now"/></div>
+							</div>
+						</Carousel.Item>
+						
+						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top ">
+							<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad ">
+								<div className="auto_cad"></div>
+								<div className="button_upper_text">AutoCAD is expiring on <br/> October 21,2017</div>
+								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_renew" value="RENEW NOW"/></div>
+							</div>
+						</Carousel.Item>
+						
+						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top ">
+							<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad ">
+								<div className="auto_desk"></div>
+								<div className="button_upper_text">Get to know your Autodesk <br/>Account</div>
+								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_tour" value="TAKE A TOUR"/></div>
+							</div>
+						</Carousel.Item>
+					
+					{/* <Carousel.Item>
+						  <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
+						</Carousel.Item>
+						
+						<Carousel.Item>
+						  <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
+						</Carousel.Item>
+						
+						<Carousel.Item>
+						  <img width={900} height={500} alt="900x500" src="/assets/carousel.png"/>
+					</Carousel.Item> */}
+					
+					</Carousel>
+					{/*Carousel end here*/}
 					
 					<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top new_contents">
 						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad new_header">

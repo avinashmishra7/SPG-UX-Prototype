@@ -74,9 +74,18 @@
     display:none;
 }
 .mobile_view{
-    display:block;
     height: 13px;
     background: url(../images/menu_list.png) no-repeat;
+    width: 16px;
+    float:left;
+    margin-left: 9px;
+    display:none;
+    cursor:pointer;
+    margin-top: 8px;
+}
+.mobile_close{
+    height: 13px;
+    background: url(../images/menu_close.png) no-repeat;
     width: 16px;
     float:left;
     margin-left: 9px;
@@ -180,7 +189,7 @@
 .left_main_accord .panel-heading .panel-title>a[aria-selected=true] {
     border-top: none;
     border-right: none;
-    color: #fff;
+    color: #CDEAF7;
    /*  background: #2d323c; change*/
 }
 
@@ -230,11 +239,11 @@
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-bottom: none;
-    color: #fff;
+    color: #CDEAF7;
     display: block;
     padding: 14px 15px 11px 19px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 15px;
     /*Change on 20 sept*/
     /* font-weight: bold; */
 }
@@ -285,7 +294,7 @@
   /*   background: #e2f3db; */
 }
 .left_panel_ul li label{
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 25px;
     cursor:pointer;
     
@@ -435,6 +444,24 @@
 .all_rights{
     margin-bottom:20px;
 }
+.left_panel_ul li.sub_pad{
+    padding-left:27px
+}
+.left_panel_ul li.sub_pad label:before{
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 7px;
+    margin-top: 4px;
+    width: 4px;
+    height: 4px;
+    border-radius: 10px;
+    background: #fff;
+}
+.left_panel_ul li.sub_pad.active_li label:before, .left_panel_ul li.sub_pad:hover label:before{
+    background: #4EB4E3 ;
+}
+
 /*================Left menu css end here================================*/
 .top_images{
     display:flex;
@@ -547,13 +574,14 @@ body{
 }
 .text_right{    
     float: right;
-    font-size: 45px;
+    font-size: 40px;
     margin-right: 23px;
     position: absolute;
     right: 10px;
-    color: #585858;
+    color: #000;
     cursor: pointer;
-    margin-top: 12px;
+    margin-top: 5px;
+    font-weight:200;
 }
 .text_right:hover{
     color:#4EB4E3; 
@@ -565,10 +593,11 @@ body{
     border-radius: 3px;
 }
 .com_back_li:hover{
-    box-shadow: 2px 2px 5px 2px  #888888;
+    box-shadow: 0 1px 2px 0 rgba(190,200,210,100);
 }
+
 .com_pad_top{
-    padding:0 5px;
+    padding:0 8px;
 }
 .below_content{
     width: 100%;
@@ -580,7 +609,7 @@ body{
     color: #9FA7AF;
 }
 .btn_grp,.features{
-    margin-top:5px;
+    margin-top:16px;
 }
 .btn_grp li{
     background:#fff;
@@ -589,23 +618,25 @@ body{
     background: url(../images/revit_updates.png);
     width: 72px;
     height: 67px;
-    margin: 40px auto 30px;
+    margin: 64px auto 30px;
 }
 .auto_cad{
     background: url(../images/autocad_exp.png);
     width: 72px;
     height: 73px;
-    margin: 40px auto 30px;
+    margin: 57px auto 30px;
 }
 .auto_desk{
     background: url(../images/autodesk_acc.png);
     width: 65px;
     height: 63px;
-    margin: 40px auto 30px;
+    margin: 64px auto 30px;
 }
 .button_upper_text{
     text-align:center;
     margin: 0px auto 28px;
+    font-size:14px;
+    line-height:20px;
 }
 .btn_div{
     width: 100%;
@@ -621,7 +652,8 @@ body{
     color: #000;
     font-weight: bold;
     margin: 0 auto;
-    text-transform: uppercase;
+    font-size:14px;
+    /*text-transform: uppercase;*/
 }
 .btn_desig:hover{
     color:#4EB4E3; 
@@ -632,18 +664,19 @@ body{
 }
 .btn_renew{
     margin-bottom: 30px;
+    margin-top: -1px;
 }
 .btn_tour{
     margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 .btn_grp li{
-    height:253px;
+    height:300px;
 }
 .btn_seperator{
     background: url(../images/box_devide.png);
-    width: 2px;
-    height: 196px;
+    width: 1px;
+    height: 239px;
     float: right;
     position: absolute;
     right: 0px;
@@ -651,14 +684,14 @@ body{
 }
 .new_contents
 {
-    margin-top: 10px;
+    margin-top: 16px;
 }
 .new_contents li{
     background: #fff;
     padding: 0px 15px;
     line-height: 48px;
-    font-size: 13px;
-    color: #9FA7AF;
+    font-size: 14px;
+    color: #565C5F;
 }
 
 
@@ -682,9 +715,9 @@ body{
     /* padding-bottom: 10px !important; */
 }
 .com_box{
-    padding: 0 5px;
+    padding: 0 8px;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 16px;
 }
 
 
@@ -693,8 +726,8 @@ body{
     padding: 0px 15px;
     /* line-height: 48px; */
     line-height: 17px;
-    font-size: 13px;
-    color: #9FA7AF;
+    font-size: 14px;
+    color: #565C5F;
 }
 .com_box li:before {
     content: "";
@@ -704,10 +737,10 @@ body{
     width: 100%;
     background-size: cover;
 }
-.com_box li.sub_li:before {
+/* .com_box li.sub_li:before {
     margin-bottom: 13px;
     margin-top: 13px;
-}
+} */
 
 .com_box li.sub_li_bottom{
     padding-bottom: 14px;
@@ -729,7 +762,57 @@ body{
     float: left;
     border-radius: 5px;
 }
+.new_contents li:hover{
+    color:#4EB4E3;
+}
+.com_box li:hover{
+    color:#4EB4E3;
+}
+.btn_grp:hover {
+    box-shadow: 0 1px 2px 0 rgba(190,200,210,100);
+}
+.com_box .sub_li{
+    padding-bottom:11px;
+}
+.com_box li.sub_li:before {
+    margin-bottom: 13px;
+    /* margin-top: 13px; */
+}
+.new_header h2{
+    padding-bottom: 11px;
+    color: #0A131C;
+    font-weight:200;
+}
 
+.support_box h2,.feedback_box h2{
+    font-size:24px;
+}
+/*Slider Start Here*/
+.slider{
+    margin-top:5px;
+    display:none;
+}
+.slider .carousel-inner{
+    background:#fff;
+}
+.slider a{
+    width: auto;
+    background: #fff;
+}
+.slider a .glyphicon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.slider .carousel-indicators .active {
+    background-color: #4EB4E3 !important;;
+}
+.slider .carousel-indicators li{
+    background-color: #ECF0F3 !important;
+}
+.slider .carousel-indicators{
+    bottom:8px;
+}
+/*Slider end here*/
 /*=============Dash board end here=============*/
 
 /*============Quick Links start here===========*/
@@ -788,11 +871,20 @@ body{
 .link_down{
     margin-bottom:15px;
 }
-/*night*/
+.quick_link li{
+    padding-left: 0px;
+}
 .bottom_link{
     bottom: 0px;
-    /* height: 41px; */
     height: 1px;
+}
+.link_bot a{
+    padding-left: 24px !important;
+}
+.link_bot .separator{
+    float: left;
+    width: 90%;
+    margin: 15px 11px;
 }
 /*============Quick Links end here===========*/
 
@@ -818,7 +910,7 @@ body{
 
 .left_main_menu {
     background: #222933 none repeat scroll 0 0;
-    color: #fff;
+    color: #CDEAF7;
     display: flex;
     flex-direction: column;
     float: left;

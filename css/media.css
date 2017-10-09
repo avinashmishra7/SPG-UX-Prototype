@@ -93,8 +93,8 @@
 		margin-bottom:10px;
 	}
 }
-@media screen and (max-width:320px) {
-	.mobile_logo, .mobile_view{
+@media screen and (max-width:414px) {
+	.mobile_logo, .mobile_view,.mobile_close{
 		display:block;
 	}
 	.logo1,.logo2,.iphoneDashboard{
@@ -136,11 +136,22 @@
 	.left_main_menu:hover ~ .main_bg{
 		margin-left: 0px;
 	}
-
-	
+	/*.desktop_view{
+		display:none;
+	}*/
+	.text_right{
+		font-size:32px;
+		font-weight:200;
+	}
 }
 
-
+@media screen and (min-width:1575px) {
+	.fix_width{
+		width: 1285px;
+		left: 50%;
+		margin-left: -642px;
+	}
+}
 
 
 
