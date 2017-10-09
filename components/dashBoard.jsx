@@ -29,20 +29,6 @@ const DashBoard = React.createClass({
 			 <div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
 					<h4 className="top_wish">Good afternoon, Jane</h4>
 				</div>
-				{/* <div className="col-xs-12 col-md-3 col-sm-3 col-lg-3 no-pad top_images1">
-					<img src={'images/update.png'} className="const_img img_responsive img-responsive all_pad" />
-				</div>
-				<div className="col-xs-12 col-md-3 col-sm-3 col-lg-3 no-pad top_images1">
-					<img src={'images/support.png'} className="const_img img_responsive img-responsive all_pad" />
-				</div>
-				<div className="col-xs-12 col-md-3 col-sm-3 col-lg-3 no-pad top_images1">
-					<img src={'images/pending.png'} className="const_img img_responsive img-responsive all_pad" />
-				</div>
-				<div className="col-xs-12 col-md-3 col-sm-3 col-lg-3 no-pad top_images1">
-					<img src={'images/cloud.png'} className="const_img img_responsive img-responsive all_pad" />
-	</div>  */}
-				
-				
 				<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad features ul_mobile_view">
 					<li className="col-xs-12 col-md-3 col-sm-3 col-lg-3 com_pad_top">
 						<div className="com_back_li">
@@ -80,12 +66,6 @@ const DashBoard = React.createClass({
 			</div>
 			
 			<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad main_content1">
-				
-				{/* <div className="col-xs-12 col-md-9 col-sm-12 col-lg-9 no-pad top_images1">
-					<img src={'images/renew.png'} className="const_img img_responsive img-responsive all_pad" />
-					<img src={'images/new.png'} className="const_img img_responsive img-responsive all_pad" />
-	</div> */}
-				
 				<div className="col-xs-12 col-md-9 col-sm-12 col-lg-9 no-pad">
 					<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top btn_grp">
 						<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
@@ -130,33 +110,23 @@ const DashBoard = React.createClass({
 				</div>
 				
 				<div className="col-xs-12 col-md-3 col-sm-12 col-lg-3 no-pad top_images1">
-				{/* <div className="col-xs-12 col-md-12 col-sm-6 col-lg-12 no-pad top_images1">
-						<img src={'images/support_right.png'} className="const_img img_responsive img-responsive all_pad" />
-					</div>	
-					<div className="col-xs-12 col-md-12 col-sm-6 col-lg-12 no-pad top_images1">
-						<img src={'images/feedback.png'} className="const_img img_responsive img-responsive all_pad" />
-				</div> */}
-					
 					<ul className="col-xs-12 col-md-12 col-sm-6 col-lg-12 support_box com_box">
 						<li className="new_header"><h2>Support</h2></li>
-						<li>My Support</li>
-						<li>Open support case(2)</li>
-						<li>Contact support</li>
-						<li>Access commmunity and user forums</li>
+						<li className="sub_li">My Support</li>
+						<li className="sub_li">Open support case(2)</li>
+						<li className="sub_li">Contact support</li>
+						<li className="sub_li sub_li_bottom">Access commmunity and user forums</li>
 					</ul>
 					<ul className="col-xs-12 col-md-12 col-sm-6 col-lg-12 feedback_box com_box">
 						<li className="new_header"><h2>Feedback</h2></li>
-						<li>Send feedback</li>
-						<li>Take a quick survey</li>
-						<li>Join an upcoming research study</li>
+						<li className="sub_li">Send feedback</li>
+						<li className="sub_li">Take a quick survey</li>
+						<li className="sub_li sub_li_bottom">Join an upcoming research study</li>
 					</ul>	
 				</div>
 				
 			</div>
-			
-			
-			
-			
+
 			 {/* <div className="col-xs-12 col-md-6 col-sm-12 col-lg-6 no-pad">
                 <PieChart
                     data={ data }
@@ -183,14 +153,6 @@ const DashBoard = React.createClass({
                 }
                 </div>
             </div> */}
-			
-			
-			
-			
-			
-			
-			
-			
 			
 		</div>	
 		

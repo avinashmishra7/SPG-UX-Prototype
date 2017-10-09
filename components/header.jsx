@@ -2,15 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactBootstrap from 'react-bootstrap';
 import {Navbar,Carousel,Item,Caption,Popover,Tooltip,OverlayTrigger,Table,Tabs,Tab,Input, Nav,NavItem,NavDropdown,MenuItem, Accordion,Panel, PanelGroup,Glyphicon } from 'react-bootstrap';
+import { Router, Route, Link, browserHistory, History ,RouterContext} from 'react-router';
+import LeftMenu from './leftMenu.jsx';
 
 const Header = React.createClass({
-	
-	getInitialState: function(){
-		return {
-		}
-	},
 		
 	render: function() {
+		console.log("header...",this.props.selectedLeft);
 		return (
 			<div className="top_header">
 				<div className="header">
@@ -18,7 +16,10 @@ const Header = React.createClass({
 						<nav className="module moduleGlobal">
 							<ul className="module moduleGlobalNav">
 								<li className="left_menu">
-									<a className="logo" href="#"></a>
+									<a className="logo1" href="#"></a>
+									<a className="logo2" href="#"></a>
+									<a className="mobile_view" href="#" onClick={this.props.mobileDashboard}></a>
+									<a className="mobile_logo" href="#"></a>
 								</li>
 								<li className="user"><span className="devide"></span><span className="avatar"></span></li>
 								<li className="com_icon">
