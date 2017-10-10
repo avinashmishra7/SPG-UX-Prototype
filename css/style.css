@@ -250,7 +250,7 @@
 
 
 .left_panel .panel-title{
-    color: #fff;
+    color: #CDEAF7;
 }
 
 .left_panel_ul {
@@ -445,7 +445,7 @@
     margin-bottom:20px;
 }
 .left_panel_ul li.sub_pad{
-    padding-left:27px
+	padding-left:27px
 }
 .left_panel_ul li.sub_pad label:before{
     display: block;
@@ -459,7 +459,7 @@
     background: #fff;
 }
 .left_panel_ul li.sub_pad.active_li label:before, .left_panel_ul li.sub_pad:hover label:before{
-    background: #4EB4E3 ;
+	background: #4EB4E3 ;
 }
 
 /*================Left menu css end here================================*/
@@ -581,7 +581,7 @@ body{
     color: #000;
     cursor: pointer;
     margin-top: 5px;
-    font-weight:200;
+    font-weight: 200;
 }
 .text_right:hover{
     color:#4EB4E3; 
@@ -593,9 +593,8 @@ body{
     border-radius: 3px;
 }
 .com_back_li:hover{
-    box-shadow: 0 1px 2px 0 rgba(190,200,210,100);
+    box-shadow: 0 1px 2px 0  rgba(190,200,210,100);
 }
-
 .com_pad_top{
     padding:0 8px;
 }
@@ -635,8 +634,8 @@ body{
 .button_upper_text{
     text-align:center;
     margin: 0px auto 28px;
-    font-size:14px;
-    line-height:20px;
+	font-size:14px;
+	line-height: 20px;
 }
 .btn_div{
     width: 100%;
@@ -652,8 +651,7 @@ body{
     color: #000;
     font-weight: bold;
     margin: 0 auto;
-    font-size:14px;
-    /*text-transform: uppercase;*/
+	font-size:14px;
 }
 .btn_desig:hover{
     color:#4EB4E3; 
@@ -664,7 +662,7 @@ body{
 }
 .btn_renew{
     margin-bottom: 30px;
-    margin-top: -1px;
+	margin-top:-1px;
 }
 .btn_tour{
     margin-bottom: 30px;
@@ -689,19 +687,31 @@ body{
 .new_contents li{
     background: #fff;
     padding: 0px 15px;
-    line-height: 48px;
+    line-height: 17px;
     font-size: 14px;
     color: #565C5F;
 }
-
+.new_contents li.sub_li{
+	padding-bottom: 11px;
+}
+.new_contents li.sub_li:before {
+    margin-bottom: 13px;
+}
 
 .new_contents li:before {
     content: "";
     float: left;
     height: 1px;
-    background: url(../images/line_hori.png) no-repeat;
+    background: url(../images/link_divider.png) no-repeat;
     width: 100%;
     background-size: cover;
+}
+/*today changes*/
+.new_contents li.sub_li1:before {
+	 background: url(../images/header_divider.png) no-repeat;
+}
+.com_box li.sub_li2:before {
+	background: url(../images/header_divider.png) no-repeat;
 }
 .new_contents .new_header:before {
     content: "";
@@ -733,7 +743,7 @@ body{
     content: "";
     float: left;
     height: 1px;
-    background: url(../images/line_hori.png) no-repeat;
+    background: url(../images/link_divider.png) no-repeat;
     width: 100%;
     background-size: cover;
 }
@@ -763,54 +773,76 @@ body{
     border-radius: 5px;
 }
 .new_contents li:hover{
-    color:#4EB4E3;
+	color:#4EB4E3;
 }
 .com_box li:hover{
-    color:#4EB4E3;
+	color:#4EB4E3;
 }
-.btn_grp:hover {
-    box-shadow: 0 1px 2px 0 rgba(190,200,210,100);
+/*Today changes*/
+/* .btn_grp:hover {
+    box-shadow: 0 1px 2px 0  rgba(190,200,210,100);
+} */
+
+.btn_grp .div_hov:hover {
+    box-shadow: 0 1px 2px 0 rgba(190, 200, 210, 1);
 }
+
 .com_box .sub_li{
-    padding-bottom:11px;
+	padding-bottom:11px;
 }
 .com_box li.sub_li:before {
     margin-bottom: 13px;
     /* margin-top: 13px; */
 }
 .new_header h2{
-    padding-bottom: 11px;
+	padding-bottom: 11px;
     color: #0A131C;
-    font-weight:200;
+	font-weight:200;
 }
-
 .support_box h2,.feedback_box h2{
-    font-size:24px;
+	font-size:24px;
 }
 /*Slider Start Here*/
 .slider{
-    margin-top:5px;
-    display:none;
+	margin-top:5px;
+	display:none;
 }
 .slider .carousel-inner{
-    background:#fff;
+	background:#fff;
 }
 .slider a{
-    width: auto;
+	width: auto;
     background: #fff;
 }
 .slider a .glyphicon {
-    margin-left: 10px;
-    margin-right: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .slider .carousel-indicators .active {
     background-color: #4EB4E3 !important;;
 }
 .slider .carousel-indicators li{
-    background-color: #ECF0F3 !important;
+	background-color: #ECF0F3 !important;
 }
 .slider .carousel-indicators{
-    bottom:8px;
+	bottom:8px;
+}
+/*Today changes*/
+.slider .glyphicon-chevron-left::before {
+    content: "\e079";
+	background: url(../images/left-arrow.png);
+    width: 16px;
+    height: 18px;
+	display:block;
+	text-shadow: none;
+}
+.slider .glyphicon-chevron-right::before {
+    content: "\e079";
+	background: url(../images/right-arrow.png);
+    width: 16px;
+    height: 18px;
+	display:block;
+	text-shadow: none;
 }
 /*Slider end here*/
 /*=============Dash board end here=============*/
@@ -872,17 +904,17 @@ body{
     margin-bottom:15px;
 }
 .quick_link li{
-    padding-left: 0px;
+	padding-left: 0px;
 }
 .bottom_link{
     bottom: 0px;
     height: 1px;
 }
 .link_bot a{
-    padding-left: 24px !important;
+	padding-left: 24px !important;
 }
 .link_bot .separator{
-    float: left;
+	float: left;
     width: 90%;
     margin: 15px 11px;
 }
