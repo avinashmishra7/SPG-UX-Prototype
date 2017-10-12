@@ -70,7 +70,7 @@ const DashBoard = React.createClass({
 					<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top btn_grp desktop_view">
 						
 						<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad div_hov">
-							<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
+							<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad li_border_left">
 								<div className="revit_update"></div>
 								<div className="button_upper_text">2 new revit updates avilable</div>
 								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_download" value="Download now"/></div>
@@ -82,7 +82,7 @@ const DashBoard = React.createClass({
 								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_renew" value="Renew now"/></div>
 								<div className="btn_seperator"></div>
 							</li>
-							<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
+							<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad li_border_right">
 								<div className="auto_desk"></div>
 								<div className="button_upper_text">Get to know your Autodesk <br/>Account</div>
 								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_tour" value="Take a tour"/></div>
@@ -136,7 +136,7 @@ const DashBoard = React.createClass({
 						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li">
 							New release of Revit available, download now
 						</li>
-						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li">
+						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li sub_li_border">
 							Your subscrition of Navisworks(3 seats) expired on December 1 2017
 						</li>
 					</ul>

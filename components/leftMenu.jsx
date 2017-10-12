@@ -119,9 +119,9 @@ const LeftMenu = React.createClass({
 						</Panel> */}
 						<div className="separator"></div>
 						
-						<Panel header="Support" collapsible defaultExpanded className="left_panel IT-Services top_last_menues com_menu"></Panel>
-						<Panel header="Send feedback"  defaultExpanded collapsible  className="left_panel IT-Services top_last_menues com_menu"></Panel>
-						<Panel header="Contact us" defaultExpanded collapsible  className="left_panel IT-Services top_last_menues com_menu"></Panel>
+						<Panel header="Support" collapsible defaultExpanded className="extra_header left_panel IT-Services top_last_menues com_menu"></Panel>
+						<Panel header="Send feedback"  defaultExpanded collapsible  className="extra_header left_panel IT-Services top_last_menues com_menu"></Panel>
+						<Panel header="Contact us" defaultExpanded collapsible  className="extra_header left_panel IT-Services top_last_menues com_menu"></Panel>
 						
 						<div className="separator"></div>
 						

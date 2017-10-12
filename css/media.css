@@ -1,4 +1,4 @@
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1080px) {
 	.left_main_menu{
 		margin-left: -210px;
 	}
@@ -91,10 +91,12 @@
 	}
 	.btn_grp li{
 		margin-bottom:10px;
+		border-radius: 4px;
 	}
+
 }
 @media screen and (max-width:414px) {
-	.mobile_logo, .mobile_view,.mobile_close,.slider{
+	.mobile_logo, .mobile_view,.mobile_close{
 		display:block;
 	}
 	.logo1,.logo2,.iphoneDashboard{
@@ -136,9 +138,9 @@
 	.left_main_menu:hover ~ .main_bg{
 		margin-left: 0px;
 	}
-	.desktop_view{
+	/*.desktop_view{
 		display:none;
-	} 
+	} */
 	.text_right{
 		font-size:32px;
 		font-weight:200;
