@@ -16,10 +16,11 @@ const Trial = React.createClass({
 		return (
 			<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
 				<div className="right_contents">
-						<h2 className="text_align">Trial</h2>
+					<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
+						<img src={'images/trials.png'} className="const_img img_responsive" />
+					</div>
 				</div>	
 			</div>
-		
 		)
 	}
 });

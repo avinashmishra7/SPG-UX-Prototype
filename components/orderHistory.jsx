@@ -5,7 +5,7 @@ import {Navbar,Carousel,Item,Caption,Popover,Tooltip,OverlayTrigger,Table,Tabs,T
 
 
 
-const AllProducts = React.createClass({
+const OrderHistory = React.createClass({
 	
 	getInitialState: function(){
 		return {
@@ -17,13 +17,12 @@ const AllProducts = React.createClass({
 			<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
 				<div className="right_contents">
 					<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad">
-						<img src={'images/all_products_services.png'} className="const_img img_responsive" />
+						<img src={'images/order_history.png'} className="const_img img_responsive" />
 					</div>
 				</div>	
 			</div>
-		
 		)
 	}
 });
 
-module.exports = AllProducts;
+module.exports = OrderHistory;

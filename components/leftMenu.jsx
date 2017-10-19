@@ -47,27 +47,29 @@ const LeftMenu = React.createClass({
 									<label id="Project_type">All products and services</label>
 								</li>
 								
-								
 								<li className={this.state.selectedLeft=="productUpdates"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}  onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('productUpdates')}}>
 									<label  id="Geography">Product updates</label>
 								</li>
+								
 								<li className={this.state.selectedLeft=="trials"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"} onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('trials')}}>
 									<label  id="Geography">Trials</label>
 								</li>
 							</ul>
 						</Panel>
 						
-						<Panel  collapsible="false"  expanded={this.state.open} header="Manage Access" onClick={()=>{this.props.leftMenuClick('Users')}} 
-						className={(this.state.selectedLeft=="devices" || this.state.selectedLeft=="Users" || this.state.selectedLeft=="Products") ?
+						<Panel  collapsible="false"  expanded={this.state.open} header="Manage Access" onClick={()=>{this.props.leftMenuClick('users')}} 
+						className={(this.state.selectedLeft=="devices" || this.state.selectedLeft=="users" || this.state.selectedLeft=="products") ?
 						"left_panel tablemain-cls com_hover manage header_active ":"left_panel tablemain-cls com_hover manage header_non_active"}>
 						
 							<ul className="col-xs-12 no-pad left_panel_ul" >
-								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('Users')}} className={this.state.selectedLeft=="Users"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}>
+								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('users')}} className={this.state.selectedLeft=="users"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}>
 									<label className="col-xs-12 no-pad" htmlFor="Project_Name">Users</label>
 								</li>
-								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('Products')}} className={this.state.selectedLeft=="Products"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}>
+								
+								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('products')}} className={this.state.selectedLeft=="products"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}>
 									<label className="col-xs-12 no-pad" htmlFor="Project_Name">Products</label>
 								</li>
+								
 								<li onClick={(event)=>{event.stopPropagation();this.props.leftMenuClick('devices')}} className={this.state.selectedLeft=="devices"?"active_li col-xs-12 col-sm-12 col-md-12 col-lg-12":"non_active col-xs-12 col-sm-12 col-md-12 col-lg-12"}>
 									<label className="col-xs-12 no-pad" htmlFor="Project_Name">Devices</label>
 								</li>
