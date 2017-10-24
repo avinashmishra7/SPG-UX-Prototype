@@ -33,7 +33,7 @@ class Home extends React.Component{
 				<Header mobileDashboard={this.mobileDashboard.bind(this)} mobileDashboardClick={this.state.mobileDashboardClick}/>
 					<div className="main_content">
 						<LeftMenu mobileDashboardClick={this.state.mobileDashboardClick} mobileDashboard={this.mobileDashboard.bind(this)} selectedLeft={this.state.selectedLeft} leftMenuClick={(val)=>{this.setState({selectedLeft:val,selectedRight:val,mobileDashboardClick:!this.state.mobileDashboardClick})}}/>	
-						<RightContent  mobileDashboardClick={this.state.mobileDashboardClick} mobileDashboard={this.mobileDashboard.bind(this)} selectedRight={this.state.selectedRight}/>
+						<RightContent  mobileDashboardClick={this.state.mobileDashboardClick} mobileDashboard={this.mobileDashboard.bind(this)} selectedRight={this.state.selectedRight}  leftMenuClick={(val)=>{this.setState({selectedLeft:val,selectedRight:val,mobileDashboardClick:!this.state.mobileDashboardClick})}}/>
 					</div>
 			</div>
 		)

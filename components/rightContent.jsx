@@ -11,7 +11,6 @@ import CloudServices from './cloud_service_usege.jsx';
 import Subscriptions from './subscriptions.jsx';
 import UpcomingPayments from './upcomingPayments.jsx';
 import OrderHistory from './orderHistory.jsx';
-
 import Contracts from './contracts.jsx';
 
 
@@ -29,7 +28,6 @@ class RightContent extends React.Component{
 		console.log('[RightContent] is did mount');
 	}
 	componentWillReceiveProps(nextProps){
-		console.log('[RightContent] is will receiveProps');
 		this.setState({
 			rightJsx:nextProps.selectedRight,
 		})
@@ -37,10 +35,14 @@ class RightContent extends React.Component{
 	componentWillUnmount(){
 		console.log('[RightContent] is will unmount');
 	}
+	
+	
+	
 	render(){
+		console.log("bikash123456"+this.state.rightJsx);
 		return(
 			<div className="col-xs-10 col-md-10 col-lg-10 col-sm-10 no-pad flex main_bg">
-				{this.state.rightJsx=='dashboard'?<Dashboard />:null}
+				{this.state.rightJsx=='dashboard'?<Dashboard leftMenuClick={(val)=>{this.props.leftMenuClick(val)}}/>:null}
 				{this.state.rightJsx=='trials'?<Trial />:null}
 				{this.state.rightJsx=='allProducts'?<AllProducts />:null}
 				{this.state.rightJsx=='productUpdates'?<ProductUpdates />:null}

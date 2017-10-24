@@ -9,7 +9,7 @@ const DashBoard = React.createClass({
 	getInitialState: function(){
 		return {
 			index: 0,
-		direction: null,
+			direction: null,
 		}
 	},
 	
@@ -19,6 +19,7 @@ const DashBoard = React.createClass({
 			direction: e.direction
 		});
 	},
+
 		
 	render: function() {
 		
@@ -31,7 +32,7 @@ const DashBoard = React.createClass({
 				</div>
 				<ul className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad features ul_mobile_view">
 					<li className="col-xs-12 col-md-3 col-sm-3 col-lg-3 com_pad_top">
-						<div className="com_back_li">
+						<div className="com_back_li" onClick={this.props.leftMenuClick.bind(this,'productUpdates')}>
 							<div className="com_icon updates"></div>
 							<div className="text_right">2</div>
 							<span className="below_content">New updates</span>
@@ -39,23 +40,25 @@ const DashBoard = React.createClass({
 					</li>
 					
 					<li className="col-xs-12 col-md-3 col-sm-3 col-lg-3 com_pad_top">
+						<a href="aaa" target="blank">
 						<div className="com_back_li">
 							<div className="com_icon support_case"></div>
 							<div className="text_right">4</div>
 							<span className="below_content">Support cases</span>
 						</div>	
+						</a>
 					</li>
 					
 					<li className="col-xs-12 col-md-3 col-sm-3 col-lg-3 com_pad_top">
-						<div className="com_back_li">
+						<div className="com_back_li" onClick={this.props.leftMenuClick.bind(this,'users')}>
 							<div className="com_icon invites"></div>
 							<div className="text_right">3</div>
 							<span className="below_content">Pending invites</span>
-						</div>	
+						</div>
 					</li>
 					
 					<li className="col-xs-12 col-md-3 col-sm-3 col-lg-3 com_pad_top">
-						<div className="com_back_li">
+						<div className="com_back_li"  onClick={this.props.leftMenuClick.bind(this,'cloud_service')}>
 							<div className="com_icon cloud"></div>
 							<div className="text_right">250</div>
 							<span className="below_content">Cloud credits</span>
@@ -73,7 +76,7 @@ const DashBoard = React.createClass({
 							<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad li_border_left">
 								<div className="revit_update"></div>
 								<div className="button_upper_text">2 new revit updates avilable</div>
-								<div className="btn_div"><input type="button" name="asas" className="btn_desig btn_download" value="Download now"/></div>
+								<div className="btn_div"><input onClick={this.props.leftMenuClick.bind(this,'productUpdates')} type="button" name="asas" className="btn_desig btn_download" value="Download now"/></div>
 								<div className="btn_seperator"></div>
 							</li>
 							<li className="col-xs-12 col-md-4 col-sm-4 col-lg-4 no-pad ">
@@ -94,7 +97,7 @@ const DashBoard = React.createClass({
 					<Carousel className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top slider" 
 					 activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect} >
 					
-						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top">
+						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top carousel_height">
 							<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad ">
 								<div className="revit_update"></div>
 								<div className="button_upper_text">2 new revit updates avilable</div>
@@ -102,7 +105,7 @@ const DashBoard = React.createClass({
 							</div>
 						</Carousel.Item>
 						
-						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top ">
+						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top carousel_height">
 							<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad ">
 								<div className="auto_cad"></div>
 								<div className="button_upper_text">AutoCAD is expiring on <br/> October 21,2017</div>
@@ -110,7 +113,7 @@ const DashBoard = React.createClass({
 							</div>
 						</Carousel.Item>
 						
-						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top ">
+						<Carousel.Item className="col-xs-12 col-md-12 col-sm-12 col-lg-12 com_pad_top carousel_height">
 							<div className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad ">
 								<div className="auto_desk"></div>
 								<div className="button_upper_text">Get to know your Autodesk <br/>Account</div>
@@ -128,16 +131,16 @@ const DashBoard = React.createClass({
 							Download preference now available under global setting
 						</li>
 						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li">
-							New account feature - Download preference
+							<a href="#aaa" target="blank"> New account feature - Download preference </a>
 						</li>
 						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li">
-							Learn more about new improvement to subscription management
+							<a href="#aaa" target="blank"> Learn more about new improvement to subscription management </a>
 						</li>
 						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li">
-							New release of Revit available, download now
+							<a href="#aaa" target="blank"> New release of Revit available, download now </a>
 						</li>
 						<li className="col-xs-12 col-md-12 col-sm-12 col-lg-12 no-pad sub_li sub_li_border">
-							Your subscrition of Navisworks(3 seats) expired on December 1 2017
+							<a href="#aaa" target="blank"> Your subscrition of Navisworks(3 seats) expired on December 1 2017 </a>
 						</li>
 					</ul>
 				</div>
@@ -145,16 +148,16 @@ const DashBoard = React.createClass({
 				<div className="col-xs-12 col-md-3 col-sm-12 col-lg-3 no-pad top_images1">
 					<ul className="col-xs-12 col-md-12 col-sm-6 col-lg-12 support_box com_box">
 						<li className="new_header"><h2>Support</h2></li>
-						<li className="sub_li sub_li2">My Support</li>
-						<li className="sub_li">Open support case(2)</li>
-						<li className="sub_li">Contact support</li>
-						<li className="sub_li sub_li_bottom">Access commmunity and user forums</li>
+						<li className="sub_li sub_li2"><a href="#aaa" target="blank" >My Support</a></li>
+						<li className="sub_li"><a href="#aaa" target="blank" >Open support case(2)</a></li>
+						<li className="sub_li"><a href="#aaa" target="blank" >Contact support</a></li>
+						<li className="sub_li sub_li_bottom"><a href="#aaa" target="blank" >Access commmunity and user forums</a></li>
 					</ul>
 					<ul className="col-xs-12 col-md-12 col-sm-6 col-lg-12 feedback_box com_box">
 						<li className="new_header"><h2>Feedback</h2></li>
 						<li className="sub_li sub_li2">Send feedback</li>
-						<li className="sub_li">Take a quick survey</li>
-						<li className="sub_li sub_li_bottom">Join an upcoming research study</li>
+						<li className="sub_li"><a href="#aaa" target="blank" >Take a quick survey</a></li>
+						<li className="sub_li sub_li_bottom"><a href="#aaa" target="blank" >Join an upcoming research study</a></li>
 					</ul>	
 				</div>
 				

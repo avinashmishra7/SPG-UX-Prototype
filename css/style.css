@@ -1003,4 +1003,17 @@ body{
     margin-left: 260px;
 }
 
+.com_box li a {
+    color: #565C5F;
+}
 
+.com_box li a:hover {
+    color: #4EB4E3;
+}
+
+.new_contents li a{
+    color:#565C5F;
+}
+.new_contents li a:hover{
+    color:#4EB4E3;
+}
