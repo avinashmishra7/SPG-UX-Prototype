@@ -297,7 +297,7 @@
 }
 .left_panel_ul li label{
     font-size: 14px;
-    margin-left: 25px;
+    margin-left: 28px;
     cursor:pointer;
     
 }
@@ -321,8 +321,8 @@
 
 .left_main_accord .top_fst_menu .panel-heading .panel-title>a::before {
     background: url(../images/products.png);
-    width: 16px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 .left_main_accord .top_fst_menu .panel-heading:hover .panel-title>a::before{
     background: url(../images/products_hover.png);
@@ -346,8 +346,9 @@
 
 .left_main_accord .reporting .panel-heading .panel-title>a::before {
     background: url(../images/reporting.png);
-    width: 16px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
+    margin-top:-8px !important; 
 }
 .left_main_accord .reporting .panel-heading:hover .panel-title>a::before {
     background: url(../images/reporting_hover.png);
@@ -359,8 +360,8 @@
 
 .left_main_accord .billing .panel-heading .panel-title>a::before {
     background: url(../images/billing.png);
-    width: 16px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 .left_main_accord .billing .panel-heading:hover .panel-title>a::before {
     background: url(../images/billing_hover.png);
@@ -373,8 +374,8 @@
 
 .left_main_accord .manage .panel-heading .panel-title>a::before {
     background: url(../images/manage.png);
-    width: 16px;
-    height: 17px;
+    width: 24px;
+    height: 24px;
 }
 .left_main_accord .manage .panel-heading:hover .panel-title>a::before {
     background: url(../images/manage_hover.png);
@@ -386,14 +387,14 @@
 
 .left_main_accord .dashboard .panel-heading:hover .panel-title>a::before {
     background: url(../images/dashboard_hover.png);
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 .left_main_accord .dashboard .panel-heading .panel-title>a::before {
     background: url(../images/dashboard.png);
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 .left_main_accord .select_active .panel-heading .panel-title>a::before {
     background: url(../images/dashboard_hover.png);
@@ -404,7 +405,7 @@
     display: block;
     content: "";
     float: left;
-    margin-right: 12px;
+    margin-right: 8px;
     margin-top: -4px;
 }
 
@@ -938,7 +939,8 @@ body{
     height: 1px;
 }
 .link_bot a{
-	padding-left: 24px !important;
+	padding-left: 19px !important;
+    font-size: 14px !important;
 }
 .link_bot .separator{
 	float: left;
