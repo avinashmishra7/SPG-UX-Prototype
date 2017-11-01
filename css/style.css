@@ -312,6 +312,13 @@
     cursor: pointer;
     font-size: 13px;
 }
+
+
+
+.quick_link li label{
+    margin-left: 21px !important;
+}
+
 .left_panel_ul li:hover {
   /*   background: #e2f3db; */
 }

@@ -39,7 +39,7 @@ class RightContent extends React.Component{
 	
 	
 	render(){
-		console.log("bikash123456"+this.state.rightJsx);
+		console.log("123456"+this.state.rightJsx);
 		return(
 			<div className="col-xs-10 col-md-10 col-lg-10 col-sm-10 no-pad flex main_bg">
 				{this.state.rightJsx=='dashboard'?<Dashboard leftMenuClick={(val)=>{this.props.leftMenuClick(val)}}/>:null}
